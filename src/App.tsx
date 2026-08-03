@@ -64,7 +64,7 @@ export default function App() {
                   className="pt-8 flex flex-col items-start gap-6"
                 >
                   <p className="text-white/40 italic">
-                    {">"} Mas fiz algo de coração pra você.
+                    {">"} Mas fiz algo de coração pra ti.
                   </p>
                   
                   <button
