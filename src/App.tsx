@@ -50,9 +50,9 @@ export default function App() {
           >
             <div className="space-y-2">
               <div className="flex gap-2 text-pink-soft/60">
-                <span>[system]</span>
+                <span>[sistema]</span>
                 <Typewriter 
-                  text="Initializing heart.PROTOCOL_v2.0..." 
+                  text="Inicando protocolo de fofura" 
                   delay={30} 
                   onComplete={() => setConsoleFinished(true)}
                 />
@@ -66,7 +66,7 @@ export default function App() {
                         animate={{ opacity: 1 }} 
                         className="text-green-400"
                     >
-                        READY
+                        Pronto
                     </motion.span>
                 )}
               </div>
@@ -78,7 +78,7 @@ export default function App() {
                   className="pt-8 flex flex-col items-start gap-6"
                 >
                   <p className="text-white/40 italic">
-                    {">"} One encrypted package found for you.
+                    {">"} Alguém tem uma mensagem especial pra ti.
                   </p>
                   
                   <button
@@ -90,12 +90,12 @@ export default function App() {
                     className="group flex items-center gap-3 px-6 py-3 border border-pink-deep/30 bg-pink-deep/5 hover:bg-pink-deep/10 text-pink-soft transition-all duration-300 pointer-events-auto"
                   >
                     <Lock size={16} className="group-hover:rotate-12 transition-transform" />
-                    <span className="font-mono tracking-widest uppercase text-xs">Decrypt Message</span>
+                    <span className="font-mono tracking-widest uppercase text-xs">ver mensagem</span>
                     <span className="terminal-cursor" />
                   </button>
                   
                   <p className="text-[10px] text-white/20 animate-pulse">
-                    (or just click anywhere)
+                    (clique aqui para revelar)
                   </p>
                 </motion.div>
               )}
@@ -116,8 +116,7 @@ export default function App() {
               transition={{ delay: 3, duration: 1.5 }}
               className="z-20 text-center"
             >
-              <h2 className="text-pink-deep font-mono text-xl tracking-[0.3em] uppercase glow-text mb-2">
-                Decrypted
+              <h2 className="text-pink-deep font-mono text-xl tracking-[0.3em] uppercase glow-text mb-2">               
               </h2>
               <div className="w-12 h-px bg-pink-deep/30 mx-auto mb-8" />
               
@@ -128,7 +127,7 @@ export default function App() {
                 }}
                 className="text-white/20 hover:text-white/60 transition-colors uppercase text-[10px] tracking-widest font-mono"
               >
-                Re-encrypt
+                voltar
               </motion.button>
             </motion.div>
 
@@ -140,7 +139,7 @@ export default function App() {
             </div>
             
             <div className="absolute bottom-8 right-8 text-[10px] font-mono text-white/10 uppercase tracking-widest">
-                heart_reveal // success
+                mensagem revelada // successo
             </div>
           </motion.div>
         )}
