@@ -116,17 +116,6 @@ export default function App() {
                 voltar
               </motion.button>
             </motion.div>
-
-            {/* Subtle tech overlays */}
-            <div className="absolute top-8 left-8 text-[10px] font-mono text-white/10 uppercase tracking-widest space-y-1">
-                <div>ln: 420</div>
-                <div>id: 0xDEADBEEF</div>
-                <div>type: organic_emotion</div>
-            </div>
-            
-            <div className="absolute bottom-8 right-8 text-[10px] font-mono text-white/10 uppercase tracking-widest">
-                mensagem revelada // successo
-            </div>
           </motion.div>
         )}
       </AnimatePresence>
