@@ -50,27 +50,13 @@ export default function App() {
           >
             <div className="space-y-2">
               <div className="flex gap-2 text-pink-soft/60">
-                <span>[sistema]</span>
                 <Typewriter 
-                  text="Inicando protocolo de amor... 💖" 
+                  text="Não sou muito bom com surpresas... 💖" 
                   delay={30} 
                   onComplete={() => setConsoleFinished(true)}
                 />
               </div>
               
-              <div className="flex gap-2 h-6">
-                <span>[status]</span>
-                {consoleFinished && (
-                    <motion.span 
-                        initial={{ opacity: 0 }} 
-                        animate={{ opacity: 1 }} 
-                        className="text-green-400"
-                    >
-                        Pronto
-                    </motion.span>
-                )}
-              </div>
-
               {consoleFinished && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -78,7 +64,7 @@ export default function App() {
                   className="pt-8 flex flex-col items-start gap-6"
                 >
                   <p className="text-white/40 italic">
-                    {">"} Alguém tem uma mensagem especial pra ti.
+                    {">"} Mas tem uma coisinha aqui que me lembrou você.
                   </p>
                   
                   <button
@@ -90,7 +76,7 @@ export default function App() {
                     className="group flex items-center gap-3 px-6 py-3 border border-pink-deep/30 bg-pink-deep/5 hover:bg-pink-deep/10 text-pink-soft transition-all duration-300 pointer-events-auto"
                   >
                     <Lock size={16} className="group-hover:rotate-12 transition-transform" />
-                    <span className="font-mono tracking-widest uppercase text-xs">ver mensagem</span>
+                    <span className="font-mono tracking-widest uppercase text-xs">💌 Abrir mensagem</span>
                     <span className="terminal-cursor" />
                   </button>
                   
